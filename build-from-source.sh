@@ -66,7 +66,7 @@ echo "Building compute component (Android) ..."
 mkdir -p compute/
 cd compute
 echo "- Initializing local repository"
-repo init -u https://github.com/streamagame/streamagame-aosp-manifest.git -b streamagame-lollipop-x86 || exit 1
+repo init -u https://github.com/alexandreant/streamagame-aosp-manifest.git -b streamagame-lollipop-x86 || exit 1
 echo "- Downloading sources"
 repo sync || exit 1
 echo "- Building ISO image from source"
