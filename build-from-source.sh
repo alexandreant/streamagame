@@ -73,7 +73,8 @@ echo "- Building ISO image from source"
 . build/envsetup.sh
 lunch android_x86-userdebug
 export INIT_BOOTCHART=true
-make -j8 iso_img || exit 1
+export USE_CCACHE=1
+make -j16 iso_img || exit 1
 mv out/target/product/x86/android_x86.iso ../bin/streamagame-compute.iso
 
 # Rendering component
